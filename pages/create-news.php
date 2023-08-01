@@ -1,3 +1,6 @@
+<?php
+include "./component/navbar.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +19,8 @@
     <title>ข่าวสาร</title>
 </head>
 
-<body>
+<body class="bodyt">
+<div class="content">
     <div class="container mt-5">
         <div class="card">
             <div class="card-header">
@@ -43,7 +47,7 @@
             </div>
         </div>
     </div>
-
+</div>
    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -65,6 +69,7 @@
 
     });
     </script>
+    
 </body>
 
 </html>

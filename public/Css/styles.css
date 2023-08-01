@@ -65,4 +65,15 @@
     margin-left: 21%;
     padding-right: 2%;
     z-index: 1; 
+    
+}
+.bgC{
+    background-color: #D9D9D9;
+    position: fixed;
+    margin-top: 4.4%;
+    padding-top: 5%;
+    width: 80%;
+    margin-left: 21%;
+    padding-right: 2%;
+    z-index: 1; 
 }
