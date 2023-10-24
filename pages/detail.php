@@ -10,6 +10,9 @@
 </head>
 
 <body>
+    <div style="padding: 0 0 0 85px;">
+        <a style="margin-top: 20px; width: 200px;" href="datanews.php" class="btn btn-primary">กลับ</a>
+    </div>
     <?php
     include '../controller/connect.php';
 // ตรวจสอบว่ามีค่า newsfeed_id ที่ส่งมาหรือไม่

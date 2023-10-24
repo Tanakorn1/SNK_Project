@@ -35,4 +35,6 @@ if (move_uploaded_file($picture_tmp, $picture_path)) {
 } else {
     echo "คำขอไม่ถูกต้อง";
 }
+
 ?>
+

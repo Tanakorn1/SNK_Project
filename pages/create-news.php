@@ -50,7 +50,7 @@
 
     <script>
     $('#description').summernote({
-        placeholder: 'Hello stand alone ui',
+        placeholder: 'เพิ่มข้อมูลลงที่นี่',
         tabsize: 2,
         height: 400,
         toolbar: [
@@ -59,9 +59,10 @@
             ['color', ['color']],
             ['para', ['ul', 'ol', 'paragraph']],
             ['table', ['table']],
-            ['insert', ['link', 'picture', 'video']],
+            ['insert', ['link', 'picture', 'video']], // เพิ่ม 'file' ที่นี่
             ['view', ['fullscreen', 'codeview', 'help']]
         ]
+
     });
     </script>
 </body>

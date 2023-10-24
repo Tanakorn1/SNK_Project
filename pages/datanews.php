@@ -7,11 +7,14 @@
     <title>ข้อมูลข่าว</title>
     <!-- เรียกใช้ Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
     <link rel="stylesheet" href="../public/Css/datanews.css">
 </head>
+
 <body>
     <div class="container mt-5">
-        <h1>ข้อมูลข่าว<a href="news.php" class="btn btn-primary">กลับ</a></h1>
+        <h1>ข้อมูลข่าว<a style="width: 200px;" href="create-news.php" class="btn btn-primary">กลับ</a></h1>
 
         <?php
     // เชื่อมต่อกับฐานข้อมูล
@@ -56,8 +59,12 @@
                         </h5>
                     </div>
                     <div style="text-align: center;">
-                        <a class="more-details-button" href="detail.php?news_id=<?php echo $row['news_id']; ?>">
+                        <a type="button" class="btn btn-success text-white" href="detail.php?news_id=<?php echo $row['news_id']; ?>">
                             <i class="flaticon-up-arrow"></i> More Details
+                        </a>
+                        <a href="edit-news.php?news_id=<?php echo $row['news_id']; ?>" type="button"
+                            class="btn btn-warning text-white">
+                            <i class="far fa-edit"></i> Edit
                         </a>
                     </div>
                 </div>
