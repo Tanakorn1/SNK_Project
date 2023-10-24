@@ -11,16 +11,16 @@ include('./controller/connect.php');
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="./public/img/logo.png">
-  <link rel="stylesheet" href="./components/forindex.css">
-  <link rel="stylesheet" href="./components/sidebar_com.css">
-  <link rel="stylesheet" href="./public/css//main.css">
-  <link rel="stylesheet" href="./public/css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link href="https://cdn.datatables.net/v/bs5/dt-1.13.4/r-2.4.1/sb-1.4.2/sp-2.1.2/datatables.min.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <style>
+  body{
+    margin: 0;
+    padding: 0;
+  }
   ::-webkit-scrollbar {
     height: 0;
     width: 0;
