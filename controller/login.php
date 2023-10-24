@@ -1,7 +1,4 @@
 <?php
-session_start(); 
-include "../controller/connect.php";
-
 if(isset($_POST['submit'])){
     $username = mysqli_real_escape_string($conn, $_POST['username']); // อันที่จะใช้ในการป้อนฐานข้อมูล
     $password = mysqli_real_escape_string($conn, $_POST['password']);
@@ -15,7 +12,7 @@ if(isset($_POST['submit'])){
         $_SESSION['email'] = $row['email'];
         $_SESSION['tel'] = $row['tel'];
 
-        header("Location: ./index.php");
+        header("Location: ?page=home");
         exit;
     } else {
         // ไม่พบผู้ใช้ที่ตรงกับชื่อผู้ใช้และรหัสผ่าน

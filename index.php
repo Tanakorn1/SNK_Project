@@ -3,7 +3,7 @@
 <?php
 ob_start();
 session_start();
-include('./Controllers/conncet.php');
+include('./controller/connect.php');
 ?>
 
 <head>
