@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <!-- เรียกใช้ Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="icon" type="image/png" href="../public/img/logo.png">
@@ -24,8 +21,7 @@
             </div>
             <div class="card-body">
                 <?php
-                include '../controller/connect.php';
-                // ตรวจสอบว่ามีค่า newsfeed_id ที่ส่งมาหรือไม่
+               
                 if (isset($_GET['news_id'])) {
                     $news_id = $_GET['news_id'];
 
@@ -36,7 +32,7 @@
                 // ตรวจสอบว่ามีข้อมูลที่ดึงออกมาหรือไม่
                 if (mysqli_num_rows($result) > 0) {
                     $row = mysqli_fetch_assoc($result);
-                    $imageURL = '../public/imgnews/'.$row['picture'];
+                    $imageURL = './public/imgnews/'.$row['picture'];
                 } else {
                     echo 'ไม่พบข้อมูลที่ตรงกับ news_id ที่ระบุ';
                 }
@@ -44,10 +40,12 @@
                     echo 'ไม่ระบุค่า news_id';
                 }
                 
-                // ปิดการเชื่อมต่อฐานข้อมูล
-                // mysqli_close($conn);
+        
                 ?>
-                <form method="post" action="../controller/update-news.php" enctype="multipart/form-data">
+                <?php 
+                include "./controller/update-news.php";
+                ?>
+                <form method="post"  enctype="multipart/form-data">
                     <input type="hidden" name="news_id" value="<?php echo $row['news_id']; ?>">
                     <div class="form-group">
                         <label for="title">ชื่อเรื่อง:</label>
@@ -71,9 +69,6 @@
             </div>
         </div>
     </div>
-
-    <!-- เรียกใช้ Bootstrap JavaScript และ jQuery -->
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 

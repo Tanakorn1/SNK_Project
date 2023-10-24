@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ข้อมูลข่าว</title>
     <!-- เรียกใช้ Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -14,13 +9,10 @@
 
 <body>
     <div class="container mt-5">
-        <h1>ข้อมูลข่าว<a style="width: 200px;" href="create-news.php" class="btn btn-primary">กลับ</a></h1>
+        <h1>ข้อมูลข่าว<a style="width: 200px;" href="?page=create-news" class="btn btn-primary">กลับ</a></h1>
 
         <?php
-    // เชื่อมต่อกับฐานข้อมูล
-    include '../controller/connect.php';
 
-    // คำสั่ง SQL สำหรับดึงข้อมูลข่าว
     $sql = "SELECT * FROM news";
 
     // ทำการส่งคำสั่ง SQL
@@ -35,7 +27,7 @@
                 echo '<div class="row">';
             }
     
-            $imageURL = '../public/imgnews/' . $row['picture'];
+            $imageURL = './public/imgnews/' . $row['picture'];
             ?>
         <div class="col-md-3 zoom">
             <div class="card-deck">
@@ -50,7 +42,7 @@
                         <h5 class="card-title">
                             <div class="wrapper"></div>
                             <b>
-                                <a href="detail.php?news_id=<?php echo $row['news_id']; ?>"
+                                <a href="?page=detail&news_id=<?php echo $row['news_id']; ?>"
                                     style="text-decoration: none; color: black; font-size: 16px;">
                                     <?php echo $row['title']; ?>
                                 </a>
@@ -59,10 +51,10 @@
                         </h5>
                     </div>
                     <div style="text-align: center;">
-                        <a type="button" class="btn btn-success text-white" href="detail.php?news_id=<?php echo $row['news_id']; ?>">
+                        <a type="button" class="btn btn-success text-white" href="?page=detail&news_id=<?php echo $row['news_id']; ?>">
                             <i class="flaticon-up-arrow"></i> More Details
                         </a>
-                        <a href="edit-news.php?news_id=<?php echo $row['news_id']; ?>" type="button"
+                        <a href="?page=edit-news&news_id=<?php echo $row['news_id']; ?>" type="button"
                             class="btn btn-warning text-white">
                             <i class="far fa-edit"></i> Edit
                         </a>
@@ -87,10 +79,7 @@
     } else {
         echo "ไม่มีข้อมูลข่าว";
     }
-
-    // ปิดการเชื่อมต่อฐานข้อมูล
-    mysqli_close($conn);
-    ?>
+?>
     </div>
 
 
@@ -99,5 +88,3 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
-</html>

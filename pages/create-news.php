@@ -23,7 +23,8 @@
                 <h1>กรอกข้อมูลข่าวสาร</h1>
             </div>
             <div class="card-body">
-                <form method="post" action="../controller/create-news.php" enctype="multipart/form-data">
+                <?php  include "./controller/create-news.php";?>
+                <form method="post"  enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="title">ชื่อเรื่อง:</label>
                         <input type="text" id="title" name="title" class="form-control" required>
@@ -37,14 +38,13 @@
                         <textarea id="description" name="description" class="form-control" required></textarea>
                     </div>
                     <button type="submit" name="submit" class="btn btn-primary">บันทึกข้อมูล</button>
-                    <a href="datanews.php" class="btn btn-primary">ดูข้อมูล</a>
+                    <a href="?page=datanews" class="btn btn-primary">ดูข้อมูล</a>
                 </form>
             </div>
         </div>
     </div>
 
-    <!-- เรียกใช้ Bootstrap JavaScript และ jQuery -->
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+   
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
