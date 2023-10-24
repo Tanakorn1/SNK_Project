@@ -1,0 +1,34 @@
+.news-card {
+    max-width: 400px;
+    /* กำหนดความกว้างสูงสุดของการแสดงข่าวสาร */
+    height: 300px;
+    /* กำหนดความสูงของการแสดงข่าวสารเป็น 400px */
+    margin: 10px;
+    /* กำหนดระยะห่างระหว่างข่าวสาร */
+}
+
+.news-image {
+    max-height: 200px;
+    /* กำหนดความสูงสูงสุดของรูปภาพ */
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    border-top: 1px solid #000;
+    /* เพิ่มเส้นด้านบน */
+    padding-top: 10px;
+    /* ระยะห่างด้านบนของเส้น */
+}
+/* สไตล์ปุ่ม */
+.more-details-button {
+    text-decoration: none;
+    color: green;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+/* สไตล์ hover ของปุ่ม */
+.more-details-button:hover {
+    color: blue; /* สีที่คุณต้องการเมื่อ hover */
+}

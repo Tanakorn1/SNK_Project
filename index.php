@@ -10,6 +10,7 @@ include('./controller/connect.php');
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./public/img/logo.png">
   <link rel="stylesheet" href="./components/forindex.css">
   <link rel="stylesheet" href="./components/sidebar_com.css">
   <link rel="stylesheet" href="./public/css//main.css">
