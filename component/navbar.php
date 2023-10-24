@@ -9,11 +9,17 @@
     
 
     <body>
-        <div class="sidebar" id="sidebar">
-            <div class="sidebar_a ">
-               <h1 class="text-white no-underline">Slot Nankai</h1>
-            </div>
-        </div>
+    <div class="sidebar" id="sidebar">
+    <div class="sidebar_a">
+        <h2 class="text-white no-underline">
+            <img src="./public/img/logo.png" alt="Slot Nankai" style="width: 20%;" >
+            Slot Nankai
+        </h2>
+        <hr class="horizontal-line" >
+
+    </div>
+</div>
+
 
         <div id="content">
             <nav class="navbar navbar-expand-lg navbar-light ">
