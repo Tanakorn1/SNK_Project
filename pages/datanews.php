@@ -9,7 +9,7 @@
 
 <body>
     <div class="container mt-5">
-        <h1>ข้อมูลข่าว<a style="width: 200px;" href="?page=create-news" class="btn btn-primary">กลับ</a></h1>
+        <h1>ข้อมูลข่าว<a style="width: 200px;" href="?page=home" class="btn btn-primary">กลับ</a></h1>
 
         <?php
 
@@ -79,7 +79,7 @@
     } else {
         echo "ไม่มีข้อมูลข่าว";
     }
-?>
+    ?>
     </div>
 
 

@@ -8,8 +8,8 @@ if(isset($_POST['submit'])){
     
     if (mysqli_num_rows($result) > 0) {
         $row = mysqli_fetch_assoc($result);
-        $_SESSION['Fname'] = $row['Fname'];
-        $_SESSION['Lname'] = $row['Lname'];
+        $_SESSION['firstname'] = $row['firstname'];
+        $_SESSION['lastname'] = $row['lastname'];
 
         // สร้างและบันทึกเวลาเข้าสู่ระบบ
         $_SESSION['login_time'] = time();
