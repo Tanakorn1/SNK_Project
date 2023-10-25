@@ -11,10 +11,10 @@
 
 <body>
     <div style="padding: 0 0 0 85px;">
-        <a style="margin-top: 20px; width: 200px;" href="datanews.php" class="btn btn-primary">กลับ</a>
+        <a style="margin-top: 20px; width: 200px;" href="?page=home" class="btn btn-primary">กลับ</a>
     </div>
     <?php
-    include '../controller/connect.php';
+    include './controller/connect.php';
 // ตรวจสอบว่ามีค่า newsfeed_id ที่ส่งมาหรือไม่
 if (isset($_GET['news_id'])) {
     $news_id = $_GET['news_id'];
