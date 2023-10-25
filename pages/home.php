@@ -7,11 +7,16 @@ include "./component/navbar.php";
 ?>
 
 <body class="bodyt">
+<div class="contentnews">
+<div class="card bg-light text-dark">
+<h1>ข้อมูลข่าว</h1>
+</div>
+</div>
     <div class="content">
         <div class="card bg-light text-dark">
         
             <div class="container mt-5">
-                <h1>ข้อมูลข่าว</h1>
+               
                 <?php
 
     $sql = "SELECT * FROM news";

@@ -43,7 +43,7 @@
   }
   
   div.content {
-    padding-top: 5%;
+    padding-top: 9%;
     margin-left: 21%;
     margin-right: 1%;
     z-index: 0; 
@@ -57,4 +57,12 @@
 }
 .horizontal-line {
     border: 2px solid rgb(255, 255, 255); /* กำหนดสีและหนาของเส้น */
+}
+.contentnews{
+    position: fixed;
+    padding-top: 5%;
+    width: 80%;
+    margin-left: 21%;
+    padding-right: 2%;
+    z-index: 1; 
 }
