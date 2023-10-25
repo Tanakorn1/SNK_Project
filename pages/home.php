@@ -5,17 +5,13 @@
 <?php
 include "./component/navbar.php";
 ?>
-<!-- <link rel="stylesheet" href="../public/Css/datanews.css"> -->
+
 <body class="bodyt">
     <div class="content">
         <div class="card bg-light text-dark">
-            <!-- <div class="card-body">
-                <h1>Hi</h1>
-                <h2><?php //echo $fname, " ", $lname; ?></h2>
-            </div> -->
+        
             <div class="container mt-5">
                 <h1>ข้อมูลข่าว</h1>
-                <!-- <a style="width: 200px;" href="?page=home" class="btn btn-primary">กลับ</a> -->
                 <?php
 
     $sql = "SELECT * FROM news";
