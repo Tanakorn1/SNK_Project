@@ -3,7 +3,7 @@ if(isset($_POST['submit'])){
 
     $title = $_POST["title"];
     $description = $_POST["description"];
-
+    // echo $description;
     $news_id = $_POST['news_id'];
 
     // ตรวจสอบว่ามีการอัปโหลดรูปภาพหรือไม่

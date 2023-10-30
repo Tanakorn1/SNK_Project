@@ -43,9 +43,9 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="../apply/apply.php" class="nav-link">
+                        <a href="?page=video" class="nav-link">
                             <i class="nav-icon fas fa-user-cog"></i>
-                            <p>data2</p>
+                            <p>VideoTest</p>
                         </a>
                     </li>
                 

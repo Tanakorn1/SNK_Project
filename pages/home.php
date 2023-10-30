@@ -8,12 +8,12 @@ include "./component/navbar.php";
 
 <body class="bodyt">
     <div class="contentnews">
-        <div class="card bg-light text-dark">
-            <h1>ข้อมูลข่าว</h1>
+        <div class="card bg-light text-dark" style="text-align: center;">
+            <h1>News</h1> <a href="?page=create-news">Add news</a>
         </div>
     </div>
     <div class="content">
-        <div class="card bg-light text-dark">
+        <div class="card bg-light text-dark" style="padding:10px;">
 
             <div class="container mt-5">
 
@@ -21,16 +21,13 @@ include "./component/navbar.php";
 
                 $sql = "SELECT * FROM news";
 
-                // ทำการส่งคำสั่ง SQL
                 $result = mysqli_query($conn, $sql);
 
-                // ตรวจสอบว่ามีข้อมูลข่าวหรือไม่
                 if (mysqli_num_rows($result) > 0) {
-                    $count = 0; // นับรายการ
+                    $count = 0; 
                     while ($row = mysqli_fetch_assoc($result)) {
                         $imageURL = './public/imgnews/' . $row['picture'];
                         
-                        // Check if the count is a multiple of 3
                         if ($count % 3 === 0) {
                             echo '</div><div class="row" style="padding: 10px;">';
                         }
@@ -38,12 +35,9 @@ include "./component/navbar.php";
                 <div class="col-md-4">
                     <div class="card-deck">
                         <div class="card news-card">
-                            <!-- เพิ่ม class "news-card" เพื่อใช้สไตล์ขนาดของการแสดงข่าวสาร -->
-                            <img style="padding: 10px; width: 255px; height: 180px;" class="card-img-top news-image"
+                            <!-- width: 255px; height: 180px; -->
+                            <img style="width: 300px; height: 200px;" class="card-img-top news-image"
                                 src="<?php echo $imageURL ?>" alt="Card image cap">
-
-                            <!-- เพิ่ม class "news-image" เพื่อใช้สไตล์ขนาดของรูปภาพ -->
-
                             <div class="card-body">
                                 <h5 class="card-title">
                                     <div class="wrapper"></div>
@@ -55,9 +49,9 @@ include "./component/navbar.php";
                                     </b>
                                 </h5>
                             </div>
-                            <div style="text-align: center;">
+                            <div style="text-align: center; margin-bottom: 10px;">
                                 <a type="button" class="btn btn-success text-white"
-                                    href="?page=detail&news_id=<?php echo $row['news_id']; ?>">
+                                    href="#">
                                     <i class="flaticon-up-arrow"></i> More Details
                                 </a>
                                 <a href="?page=edit-news&news_id=<?php echo $row['news_id']; ?>" type="button"

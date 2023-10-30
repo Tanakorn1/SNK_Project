@@ -1,6 +1,5 @@
-
 <head>
-   
+
     <!-- เรียกใช้ Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="icon" type="image/png" href="../public/img/logo.png">
@@ -45,7 +44,7 @@
                 <?php 
                 include "./controller/update-news.php";
                 ?>
-                <form method="post"  enctype="multipart/form-data">
+                <form method="post" enctype="multipart/form-data">
                     <input type="hidden" name="news_id" value="<?php echo $row['news_id']; ?>">
                     <div class="form-group">
                         <label for="title">ชื่อเรื่อง:</label>
@@ -60,11 +59,15 @@
                     </div>
                     <div class="form-group">
                         <label for="description">รายละเอียด:</label>
-                        <textarea id="description" name="description" class="form-control" required
-                            value="<?php echo $row['description']; ?>"></textarea>
+                        <!-- <textarea id="description" name="description" class="form-control" required
+                            value="<?php //echo $row['description']; ?>">
+                        </textarea> -->
+                        <textarea id="description" name="description" class="form-control" required>
+                            <?php echo $row['description']; ?>
+                        </textarea>
                     </div>
                     <button type="submit" name="submit" class="btn btn-primary">แก้ไขข้อมูล</button>
-                    <a href="datanews.php" class="btn btn-primary">กลับ</a>
+                    <a href="?page=home" class="btn btn-primary">กลับ</a>
                 </form>
             </div>
         </div>

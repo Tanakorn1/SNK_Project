@@ -38,7 +38,7 @@
                         <textarea id="description" name="description" class="form-control" required></textarea>
                     </div>
                     <button type="submit" name="submit" class="btn btn-primary">บันทึกข้อมูล</button>
-                    <a href="?page=datanews" class="btn btn-primary">ดูข้อมูล</a>
+                    <a href="?page=home" class="btn btn-primary">ดูข้อมูล</a>
                 </form>
             </div>
         </div>
