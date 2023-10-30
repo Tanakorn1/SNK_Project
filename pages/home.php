@@ -51,7 +51,7 @@ include "./component/navbar.php";
                             </div>
                             <div style="text-align: center; margin-bottom: 10px;">
                                 <a type="button" class="btn btn-success text-white"
-                                    href="#">
+                                    href="?page=test&news_id=<?php echo $row['news_id']; ?>">
                                     <i class="flaticon-up-arrow"></i> More Details
                                 </a>
                                 <a href="?page=edit-news&news_id=<?php echo $row['news_id']; ?>" type="button"
