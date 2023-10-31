@@ -1,4 +1,6 @@
-
+<?php
+include "./component/navbar.php";
+?>
     <title>ข้อมูลข่าว</title>
     <!-- เรียกใช้ Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">

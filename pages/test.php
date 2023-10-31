@@ -1,21 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ข่าวสาร</title>
-    <!-- เรียกใช้ Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-
-<body>
-    <div style="padding: 0 0 0 85px;">
-        <a style="margin-top: 20px; width: 200px;" href="?page=home" class="btn btn-primary">กลับ</a>
-    </div>
+<?php
+include "./component/navbar.php";
+?>
+<body class="bodyt">
+<div class="contentCN">
+   
     <?php
-    include './controller/connect.php';
-// ตรวจสอบว่ามีค่า newsfeed_id ที่ส่งมาหรือไม่
 if (isset($_GET['news_id'])) {
     $news_id = $_GET['news_id'];
 
@@ -52,9 +41,11 @@ if (isset($_GET['news_id'])) {
     echo 'ไม่ระบุค่า news_id';
 }
 
-// ปิดการเชื่อมต่อฐานข้อมูล
-mysqli_close($conn);
 ?>
+ <!-- <div style="padding: 0 0 0 85px;">
+        <a style="margin-top: 20px; width: 200px;" href="?page=home" class="btn btn-primary">กลับ</a>
+    </div> -->
+</div>
 </body>
 
 </html>

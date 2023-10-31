@@ -1,3 +1,6 @@
+<?php
+include "./component/navbar.php";
+?>
 <head>
 
     <!-- เรียกใช้ Bootstrap CSS -->
