@@ -4,7 +4,7 @@ include "./component/navbar.php";
 
 <body class="bodyt">
     <div class="contentCN">
-    <!-- <div class="container mt-5"> -->
+        <!-- <div class="container mt-5"> -->
 
         <?php
         if (isset($_GET['news_id'])) {
@@ -35,7 +35,11 @@ include "./component/navbar.php";
                 echo '<br><p>' . $row['description'] . '</p>';
 
                 echo '</div>';
+                echo ' <div style="margin-left: 1%; margin-top: 1%; margin-bottom: 1%;" >
+                <a style="width: 200px;" href="?page=home" class="btn btn-primary">กลับ</a>
+            </div>';
                 echo '</div>';
+               
                 echo '</div>';
             } else {
                 echo 'ไม่พบข้อมูลที่ตรงกับ news_id ที่ระบุ';
@@ -45,10 +49,8 @@ include "./component/navbar.php";
         }
 
         ?>
-        <!-- <div style="padding: 0 0 0 85px;">
-        <a style="margin-top: 20px; width: 200px;" href="?page=home" class="btn btn-primary">กลับ</a>
-    </div> -->
-    <!-- </div> -->
+
+        <!-- </div> -->
     </div>
 </body>
 
