@@ -21,7 +21,7 @@ include "./component/navbar.php";
 
 <body class="bodyt">
 <div class="contentCN">
-    <div class="container mt-5">
+    <!-- <div class="container mt-5"> -->
         <div class="card">
             <div class="card-header">
                 <h1>กรอกข้อมูลข่าวสาร</h1>
@@ -46,7 +46,7 @@ include "./component/navbar.php";
                 </form>
             </div>
         </div>
-    </div>
+    <!-- </div> -->
 </div>
    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
