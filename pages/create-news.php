@@ -20,7 +20,7 @@ include "./component/navbar.php";
 </head>
 
 <body class="bodyt">
-<div class="content">
+<div class="contentCN">
     <div class="container mt-5">
         <div class="card">
             <div class="card-header">
