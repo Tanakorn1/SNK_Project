@@ -2,22 +2,10 @@
     $fname = $_SESSION['firstname'];
     $lname = $_SESSION['lastname'];
 ?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-    <!-- SweetAlert2 CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
-</head>
-
 
 <body>
     <div class="sidebar" id="sidebar">
-        <a class="brand-link">
+        <a href="?page=home"class="brand-link">
             <span class="brand-text font-weight-light" style="font-size: 30px;">
                 <img src="./public/img/logo.png" alt="Logo" class="brand-image img-circle elevation-3"
                     style="width: 20%;">
@@ -55,8 +43,10 @@
                             <p>data3</p>
                         </a>
                     </li>
+                    <hr class="horizontal-line" style=" margin: 0 auto;" > 
                     <li class="nav-header">Account</li>
                     <li class="nav-item">
+
                         <a href="#" class="nav-link" onclick="logout()">
                             <i class="nav-icon fas fa-sign-out-alt"></i>
                             <p>Log Out</p>
@@ -76,7 +66,6 @@
                     <a style="font-size: 20px;" ><?php echo $fname, " ", $lname; ?></a>
                 </li>
             </ul>
-
             <ul class="navbar-nav ml-auto ">
                 <li class="nav-item d-md-block d-none">
                     <a class="nav-link" id="realtime-clock"></a>
