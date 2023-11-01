@@ -1,7 +1,4 @@
-<?php
-$fname = $_SESSION['firstname'];
-$lname = $_SESSION['lastname'];
-?>
+
 <?php
 include "./component/navbar.php";
 ?>
@@ -37,22 +34,21 @@ include "./component/navbar.php";
                         <div class="col-md-4">
                             <div class="card-deck">
                                 <div class="card news-card">
-                                    <!-- width: 255px; height: 180px; -->
                                     <img style="width: 300px; height: 200px;" class="card-img-top news-image" src="<?php echo $imageURL ?>" alt="Card image cap">
                                     <div class="card-body">
                                         <h5 class="card-title">
                                             <div class="wrapper"></div>
                                             <b>
-                                                <a href="?page=detail&news_id=<?php echo $row['news_id']; ?>" style="text-decoration: none; color: black; font-size: 16px;">
+                                                <a href="?page=test&news_id=<?php echo $row['news_id']; ?>" style="text-decoration: none; color: black; font-size: 16px;">
                                                     <?php echo $row['title']; ?>
                                                 </a>
                                             </b>
                                         </h5>
                                     </div>
                                     <div style="text-align: center; margin-bottom: 10px;">
-                                        <a type="button" class="btn btn-success text-white" href="?page=test&news_id=<?php echo $row['news_id']; ?>">
+                                        <!-- <a type="button" class="btn btn-success text-white" href="?page=test&news_id=<?php //echo $row['news_id']; ?>">
                                             <i class="flaticon-up-arrow"></i> More Details
-                                        </a>
+                                        </a> -->
                                         <a href="?page=edit-news&news_id=<?php echo $row['news_id']; ?>" type="button" class="btn btn-warning text-white">
                                             <i class="far fa-edit"></i> Edit
                                         </a>

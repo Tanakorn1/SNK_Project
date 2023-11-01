@@ -11,6 +11,7 @@ if(isset($_POST['submit'])){
         $_SESSION['firstname'] = $row['firstname'];
         $_SESSION['lastname'] = $row['lastname'];
 
+        $_SESSION['picture'] = $row['picture'];
         // สร้างและบันทึกเวลาเข้าสู่ระบบ
         $_SESSION['login_time'] = time();
 
